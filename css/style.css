@@ -711,11 +711,12 @@ body.nav-open .nav-toggle span:nth-child(3) {
 }
 
 .gallery-mandala {
-  width: min(800px, 82vw);
-  height: auto;
+  width: auto;
+  height: 100%;
+  max-width: none;
   left: 50%;
-  top: 58%;
-  transform: translate(-50%, -42%);
+  top: 0;
+  transform: translateX(-50%);
   opacity: 0.42;
   z-index: 0;
 }
@@ -1529,8 +1530,10 @@ body.nav-open .nav-toggle span:nth-child(3) {
 
   .gallery-mandala {
     width: 560px;
+    height: auto;
     max-width: none;
     top: -36px;
+    bottom: auto;
     left: 50%;
     transform: translateX(-50%);
     opacity: 0.36;
@@ -1583,8 +1586,8 @@ body.nav-open .nav-toggle span:nth-child(3) {
   }
 
   .review {
-    flex-basis: calc((100% - 12px) / 2);
-    padding: 16px 14px 14px;
+    flex-basis: 100%;
+    padding: 22px 20px 18px;
     min-height: 0;
   }
 

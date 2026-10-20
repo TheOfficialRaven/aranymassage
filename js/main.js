@@ -92,10 +92,14 @@
   const dotsWrap = document.querySelector(".rev-dots");
   let index = 0;
   let timer = 0;
-  const perView = 2;
+  const mobileQuery = window.matchMedia("(max-width: 640px)");
+
+  function cardsPerView() {
+    return mobileQuery.matches ? 1 : 2;
+  }
 
   function pageCount() {
-    return Math.max(1, Math.ceil(cards.length / perView));
+    return Math.max(1, Math.ceil(cards.length / cardsPerView()));
   }
 
   function schedule() {
@@ -113,13 +117,14 @@
     const styles = getComputedStyle(track);
     const gap = parseFloat(styles.columnGap || styles.gap) || 0;
     const width = card.getBoundingClientRect().width;
-    track.style.transform = "translate3d(" + (-index * perView * (width + gap)) + "px,0,0)";
+    const step = cardsPerView();
+    track.style.transform = "translate3d(" + (-index * step * (width + gap)) + "px,0,0)";
     dotsWrap.innerHTML = "";
     for (let i = 0; i < count; i += 1) {
       const dot = document.createElement("button");
       dot.type = "button";
       dot.className = "dot" + (i === index ? " is-active" : "");
-      dot.setAttribute("aria-label", (i + 1) + ". véleménycsoport");
+      dot.setAttribute("aria-label", (i + 1) + (step === 1 ? ". vélemény" : ". véleménycsoport"));
       if (i === index) dot.setAttribute("aria-current", "true");
       dot.addEventListener("click", function () { go(i); });
       dotsWrap.appendChild(dot);
