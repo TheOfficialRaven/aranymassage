@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="1200" viewBox="0 0 900 1200" role="img" aria-label="Helyőrző">
+  <rect width="900" height="1200" fill="#756454"/>
+  <g fill="none" stroke="#e6d3a8" stroke-opacity="0.7" stroke-width="3" stroke-linejoin="round" transform="translate(394.0 526.0)">
+    <rect width="112" height="81.2" rx="8"/>
+    <circle cx="34.72" cy="26.88" r="8.96"/>
+    <path d="M15.680000000000001 64.39999999999999 L47.6 34.72 L95.2 64.39999999999999"/>
+  </g>
+  <text x="450.0" y="647.6" text-anchor="middle" fill="#f6efe4" font-family="Georgia, 'Times New Roman', serif" font-size="42">Helyőrző</text>
+</svg>
