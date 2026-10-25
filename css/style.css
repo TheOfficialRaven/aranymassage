@@ -623,7 +623,7 @@ body.nav-open .nav-toggle span:nth-child(3) {
   height: auto;
   right: -90px;
   top: -50px;
-  opacity: 0.45;
+  opacity: 0.28;
 }
 
 .contact-mandala {
@@ -631,7 +631,7 @@ body.nav-open .nav-toggle span:nth-child(3) {
   height: auto;
   right: -80px;
   bottom: -70px;
-  opacity: 0.45;
+  opacity: 0.28;
 }
 
 .about-grid {
@@ -657,11 +657,6 @@ body.nav-open .nav-toggle span:nth-child(3) {
   mask-position: center;
   -webkit-mask-size: auto 100%;
   mask-size: auto 100%;
-}
-
-.filigree-wrap--contact {
-  -webkit-mask-image: url("../images/imgs/ikonok/vertical-design2.png");
-  mask-image: url("../images/imgs/ikonok/vertical-design2.png");
 }
 
 .filigree {
@@ -761,7 +756,7 @@ body.nav-open .nav-toggle span:nth-child(3) {
   left: 50%;
   top: 0;
   transform: translateX(-50%);
-  opacity: 0.42;
+  opacity: 0.36;
   z-index: 0;
 }
 
@@ -1566,13 +1561,7 @@ body.nav-open .nav-toggle span:nth-child(3) {
   }
 
   .contact-grid {
-    grid-template-columns: 76px minmax(0, 0.92fr) minmax(0, 1.08fr);
-  }
-
-  .filigree-wrap--contact {
-    align-self: center;
-    width: 76px;
-    height: calc((min(var(--max), 100vw - 48px) - 156px) * 0.5375);
+    grid-template-columns: minmax(0, calc(0.46 * (100% - 148px) + 112px)) minmax(0, 1fr);
   }
 }
 
@@ -1610,7 +1599,7 @@ body.nav-open .nav-toggle span:nth-child(3) {
     bottom: auto;
     left: 50%;
     transform: translateX(-50%);
-    opacity: 0.36;
+    opacity: 0.3;
     -webkit-mask-image: linear-gradient(to bottom, #000 0 36%, transparent 64%);
     mask-image: linear-gradient(to bottom, #000 0 36%, transparent 64%);
   }
@@ -1629,7 +1618,7 @@ body.nav-open .nav-toggle span:nth-child(3) {
     right: -62px;
     bottom: auto;
     top: calc(18vh - 6px);
-    opacity: 0.38;
+    opacity: 0.22;
   }
 }
 
