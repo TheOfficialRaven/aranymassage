@@ -149,8 +149,12 @@
     </section>
 
     <section class="service paper" id="szolgaltatas">
-      <div class="service-media">
-        <img src="images/imgs/svedmasszazs_placeholder.png" alt="Helyőrző kép" width="1672" height="941">
+      <div class="service-media" aria-hidden="true">
+        <img src="images/placeholders/service.svg" alt="" width="1400" height="900">
+        <div class="placeholder-mark service-mark">
+          <svg viewBox="0 0 112 82"><rect x="1.5" y="1.5" width="109" height="79" rx="8" fill="none" stroke="currentColor" stroke-width="3"/><circle cx="35" cy="27" r="9" fill="none" stroke="currentColor" stroke-width="3"/><path d="M16 64 L48 35 L95 64" fill="none" stroke="currentColor" stroke-width="3" stroke-linejoin="round"/></svg>
+          <span>Helyőrző</span>
+        </div>
       </div>
       <div class="container">
         <div class="service-panel">
@@ -189,7 +193,7 @@
           </article>
           <article class="benefit">
             <div class="icon" aria-hidden="true">
-              <img src="images/imgs/ikonok/izomlazitas.png" alt="">
+              <img src="images/imgs/ikonok/egyensuly.png" alt="">
             </div>
             <h3>Izomlazítás</h3>
             <p>Oldja az izomfeszültséget, enyhíti a mindennapi terhelést.</p>
@@ -203,7 +207,7 @@
           </article>
           <article class="benefit">
             <div class="icon" aria-hidden="true">
-              <img src="images/imgs/ikonok/egyensuly.png" alt="">
+              <img src="images/imgs/ikonok/izomlazitas.png" alt="">
             </div>
             <h3>Lelki egyensúly</h3>
             <p>A masszázst követő meditáció támogatja a belső harmóniát és a tudatosságot.</p>
@@ -296,34 +300,68 @@
   </main>
 
   <footer class="footer">
-    <div class="brand-lockup">
-      <a class="footer-logo" href="#kezdo" aria-label="Aranykor masszázs, ugrás a kezdőlapra">
-        <img src="images/imgs/ikonok/Logo.png" alt="">
-      </a>
-      <p>Test • Lélek • Egyensúly</p>
+    <div class="container footer-main">
+      <div class="footer-col footer-brand">
+        <div class="footer-brand-head">
+          <a class="footer-logo" href="#kezdo" aria-label="Aranykor masszázs, ugrás a kezdőlapra">
+            <img src="images/imgs/ikonok/Logo.png" alt="">
+          </a>
+          <p class="footer-tagline">Test • Lélek • Egyensúly</p>
+        </div>
+        <p class="footer-desc">Holisztikus masszázs és vezetett meditáció a testi feloldásért és a belső egyensúlyért.</p>
+      </div>
+
+      <div class="footer-col">
+        <h3 class="footer-heading">Elérhetőség</h3>
+        <ul class="footer-contact">
+          <li>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5a7 7 0 0 0-7 7c0 5.25 7 12 7 12s7-6.75 7-12a7 7 0 0 0-7-7zm0 9.5a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5z"/></svg>
+            <span>Budapest</span>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1zm8 6.5L4.8 7.6h14.4L12 12.5zm0 1.7 7.2-5.1V16H4.8V9.1L12 14.2z"/></svg>
+            <a href="mailto:hello@aranykormasszazs.hu">hello@aranykormasszazs.hu</a>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7.2 3.5h2.7l1.2 3.2-1.7 1.7a12.5 12.5 0 0 0 5.2 5.2l1.7-1.7 3.2 1.2v2.7c0 .7-.5 1.3-1.2 1.4A15.6 15.6 0 0 1 3.8 5.9c.1-.7.7-1.2 1.4-1.2z"/></svg>
+            <a href="tel:+36701234567">+36 70 123 4567</a>
+          </li>
+        </ul>
+        <h3 class="footer-heading footer-heading--spaced">Nyitvatartás</h3>
+        <p class="footer-hours">H–P: 9:00–18:00<br>SZ–V: egyeztetés szerint</p>
+      </div>
+
+      <div class="footer-col">
+        <h3 class="footer-heading">Oldalak</h3>
+        <nav class="footer-nav" aria-label="Lábléc menü">
+          <a href="#kezdo">Kezdőlap</a>
+          <a href="#rolam">Rólam</a>
+          <a href="#galeria">Galéria</a>
+          <a href="#szolgaltatas">Szolgáltatás</a>
+          <a href="#visszajelzesek">Visszajelzések</a>
+          <a href="#kapcsolat">Kapcsolat</a>
+        </nav>
+      </div>
+
+      <div class="footer-col">
+        <h3 class="footer-heading">Kövess</h3>
+        <div class="socials">
+          <a class="social" href="https://facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14.2 21v-7.2h2.4l.4-2.8h-2.8V9.2c0-.8.2-1.4 1.4-1.4H17V5.3A18 18 0 0 0 15 5.2c-2 0-3.4 1.2-3.4 3.5v1.3H9v2.8h2.6V21z"/></svg>
+          </a>
+          <a class="social" href="https://instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 3h10a4 4 0 0 1 4 4v10a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4V7a4 4 0 0 1 4-4zm5 4.6A4.4 4.4 0 1 0 16.4 12 4.4 4.4 0 0 0 12 7.6zm6.1-.9a1.1 1.1 0 1 0 1.1 1.1 1.1 1.1 0 0 0-1.1-1.1zM12 9.2A2.8 2.8 0 1 1 9.2 12 2.8 2.8 0 0 1 12 9.2z"/></svg>
+          </a>
+          <a class="social" href="https://youtube.com/" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 12.2s0-3.2-.4-4.7a2.9 2.9 0 0 0-2-2C17.8 5 12 5 12 5s-5.8 0-7.6.4a2.9 2.9 0 0 0-2 2C2 9 2 12.2 2 12.2s0 3.2.4 4.7a2.9 2.9 0 0 0 2 2C6.2 19.4 12 19.4 12 19.4s5.8 0 7.6-.4a2.9 2.9 0 0 0 2-2c.4-1.5.4-4.7.4-4.7zM10 15.2v-6l5.2 3-5.2 3z"/></svg>
+          </a>
+        </div>
+      </div>
     </div>
-    <div class="container footer-top">
-      <nav class="footer-nav" aria-label="Lábléc menü">
-        <a href="#kezdo">Kezdőlap</a>
-        <a href="#rolam">Rólam</a>
-        <a href="#galeria">Galéria</a>
-        <a href="#szolgaltatas">Szolgáltatás</a>
-        <a href="#visszajelzesek">Visszajelzések</a>
-        <a href="#kapcsolat">Kapcsolat</a>
-      </nav>
-    </div>
-    <div class="container footer-bottom">
-      <img class="rule rule--wide" src="images/imgs/ikonok/design-line.png" alt="">
-      <p class="footer-legal">© 2026 Aranykor masszázs – Minden jog fenntartva! <span class="footer-legal-sep" aria-hidden="true">|</span> <a href="adatkezeles.html">Adatkezelési tájékoztató</a></p>
-    </div>
-    <div class="footer-side">
-      <div class="socials">
-        <a class="social" href="https://instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
-          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 3h10a4 4 0 0 1 4 4v10a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4V7a4 4 0 0 1 4-4zm5 4.6A4.4 4.4 0 1 0 16.4 12 4.4 4.4 0 0 0 12 7.6zm6.1-.9a1.1 1.1 0 1 0 1.1 1.1 1.1 1.1 0 0 0-1.1-1.1zM12 9.2A2.8 2.8 0 1 1 9.2 12 2.8 2.8 0 0 1 12 9.2z"/></svg>
-        </a>
-        <a class="social" href="https://facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
-          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14.2 21v-7.2h2.4l.4-2.8h-2.8V9.2c0-.8.2-1.4 1.4-1.4H17V5.3A18 18 0 0 0 15 5.2c-2 0-3.4 1.2-3.4 3.5v1.3H9v2.8h2.6V21z"/></svg>
-        </a>
+
+    <div class="footer-bottom">
+      <div class="container">
+        <p class="footer-legal">© 2026 Aranykor masszázs – Minden jog fenntartva! <span class="footer-legal-sep" aria-hidden="true">|</span> <a href="adatkezeles.html">Adatkezelési tájékoztató</a></p>
       </div>
     </div>
   </footer>
